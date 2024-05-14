@@ -21,7 +21,7 @@
   <!-- Navi -->
   <body>
     <header class="page-header">
-      <div class="container nav-container">
+      <div class="container nav-container nav-mobile">
         <nav class="nav-container">
           <a href="./index.html" class="logo list"
             >Web<span class="logo-span">Studio</span></a
@@ -41,20 +41,125 @@
         </nav>
         <address class="auth-nav">
           <ul class="list auth-list">
-            <li class="list-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="auth-nav-link links list"
+            <li class="auth-list-item">
+              <a href="mailto:info@devstudio.com" class="auth-nav-link list"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="list-item">
-              <a href="tel:+110001111111" class="auth-nav-link links list"
+            <li class="auth-list-item">
+              <a href="tel:+110001111111" class="auth-nav-link list"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-open-button js-open-menu" type="button">
+          <svg class="mobile-menu-open-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container">
+          <button type="button" class="mobile-menu-close js-close-menu">
+            <svg
+              class="modal-close-icon"
+              width="8"
+              height="8"
+              aria-label="close-icon"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-nav list">
+            <li>
+              <a href="./index.html" class="mobile-menu-link-visited list"
+                >Studio</a
+              >
+              <div class="header-list-item"></div>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu-link list"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="/" class="mobile-menu-link list">Contacts</a>
+            </li>
+          </ul>
+          <div>
+            <address class="address-mobile">
+              <ul class="mobile-auth-nav-list list">
+                <li>
+                  <a
+                    href="tel:+110001111111"
+                    class="auth-nav-link list mobile-tel-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="auth-nav-link list mobile-mail-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="mobile-menu-icons list">
+              <li class="social-media">
+                <a href="#" class="social-media-link">
+                  <svg
+                    class="social-media-picture"
+                    width="24"
+                    height="24"
+                    aria-label="instagram"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media">
+                <a href="#" class="social-media-link">
+                  <svg
+                    class="social-media-picture"
+                    width="24"
+                    height="24"
+                    aria-label="twitter"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media">
+                <a href="#" class="social-media-link">
+                  <svg
+                    class="social-media-picture"
+                    width="24"
+                    height="24"
+                    aria-label="facebook"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media">
+                <a href="#" class="social-media-link">
+                  <svg
+                    class="social-media-picture"
+                    width="24"
+                    height="24"
+                    aria-label="linkedin"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -78,8 +183,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
-              <p class="section-description">
+              <h3 class="soft-skills-title">Strategy</h3>
+              <p class="soft-skills-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -90,8 +195,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
-              <p class="section-description">
+              <h3 class="soft-skills-title">Punctuality</h3>
+              <p class="soft-skills-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -102,8 +207,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
-              <p class="section-description">
+              <h3 class="soft-skills-title">Diligence</h3>
+              <p class="soft-skills-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -114,8 +219,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
-              <p class="section-description">
+              <h3 class="soft-skills-title">Technologies</h3>
+              <p class="soft-skills-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -127,15 +232,19 @@
       <section class="team-section section-paddings">
         <div class="container">
           <h2 class="title">Our Team</h2>
-          <ul class="feature-list list">
+          <ul class="team-list list">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/section2/mark.jpg    1x,
+                  ./images/section2/mark@2x.jpg 2x
+                "
                 src="./images/section2/mark.jpg"
                 alt="photo Mark"
                 width="264"
               />
               <div class="team-card-description">
-                <h3 class="subtitle">Mark Guerrero</h3>
+                <h3 class="team-title">Mark Guerrero</h3>
                 <p class="section-description">Product Designer</p>
                 <ul class="social-media-list list">
                   <li class="social-media">
@@ -191,12 +300,16 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/section2/tom.jpg    1x,
+                  ./images/section2/tom@2x.jpg 2x
+                "
                 src="./images/section2/tom.jpg"
                 alt="photo Tom"
                 width="264"
               />
               <div class="team-card-description">
-                <h3 class="subtitle">Tom Ford</h3>
+                <h3 class="team-title">Tom Ford</h3>
                 <p class="section-description">Frontend Developer</p>
                 <ul class="social-media-list list">
                   <li class="social-media">
@@ -252,12 +365,16 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/section2/camila.jpg    1x,
+                  ./images/section2/camila@2x.jpg 2x
+                "
                 src="./images/section2/camila.jpg"
                 alt="hoto Camila"
                 width="264"
               />
               <div class="team-card-description">
-                <h3 class="subtitle">Camila Garcia</h3>
+                <h3 class="team-title">Camila Garcia</h3>
                 <p class="section-description">Marketing</p>
                 <ul class="social-media-list list">
                   <li class="social-media">
@@ -313,12 +430,16 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/section2/daniel.jpg    1x,
+                  ./images/section2/daniel@2x.jpg 2x
+                "
                 src="./images/section2/daniel.jpg"
                 alt="photo Daniel"
                 width="264"
               />
               <div class="team-card-description">
-                <h3 class="subtitle">Daniel Wilson</h3>
+                <h3 class="team-title">Daniel Wilson</h3>
                 <p class="section-description">UI Designer</p>
                 <ul class="social-media-list list">
                   <li class="social-media">
@@ -383,6 +504,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img1.jpg    1x,
+                    ./images/portfolio/img1@2x.jpg 2x
+                  "
                   src="./images/portfolio/img1.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -401,6 +526,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img2.jpg    1x,
+                    ./images/portfolio/img2@2x.jpg 2x
+                  "
                   src="./images/portfolio/img2.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -419,6 +548,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img3.jpg    1x,
+                    ./images/portfolio/img3@2x.jpg 2x
+                  "
                   src="./images/portfolio/img3.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -437,6 +570,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img4.jpg    1x,
+                    ./images/portfolio/img4@2x.jpg 2x
+                  "
                   src="./images/portfolio/img4.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -455,6 +592,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img5.jpg    1x,
+                    ./images/portfolio/img5@2x.jpg 2x
+                  "
                   src="./images/portfolio/img5.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -473,6 +614,10 @@
             <li class="portfolio-list-item">
               <div class="card-box">
                 <img
+                  srcset="
+                    ./images/portfolio/img6.jpg    1x,
+                    ./images/portfolio/img6@2x.jpg 2x
+                  "
                   src="./images/portfolio/img6.jpg"
                   alt="Interface Concept"
                   width="360"
@@ -496,7 +641,7 @@
     <footer class="page-footer">
       <div class="container footer-content">
         <div class="footer-description">
-          <a href="./index.html" class="logo list page-footer-logo"
+          <a href="./index.html" class="page-footer-logo list"
             >Web<span class="logo-span">Studio</span></a
           >
           <p class="footer-text section-description">
@@ -682,8 +827,10 @@
                 >
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
+              ><span class="span-text"
+                >I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a></span
+              >
             </label>
           </div>
           <button type="submit" class="hero-button links">Send</button>
@@ -691,5 +838,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
