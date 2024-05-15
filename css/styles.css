@@ -568,6 +568,17 @@ button {
 
 /* Soft Skills */
 
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  justify-content: center;
+}
+
+.feature-icon {
+  display: none;
+}
+
 .soft-skills-title {
   margin-bottom: 8px;
   font-size: 36px;
@@ -585,17 +596,6 @@ button {
   letter-spacing: 0.02em;
 }
 
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  justify-content: center;
-}
-
-.feature-icon {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .feature-list {
     flex-direction: row;
@@ -609,7 +609,7 @@ button {
     width: calc((100% - 24px) / 2);
   }
 
-  .subtitle {
+  .soft-skills-title {
     text-align: left;
   }
 }
@@ -770,7 +770,6 @@ button {
   .portfolio-list {
     flex-direction: row;
     row-gap: 72px;
-    padding-bottom: 96px;
   }
 
   .portfolio-list-item {
